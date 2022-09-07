@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "154837932925",
+    "project_id": "chat-c6-online",
+    "storage_bucket": "chat-c6-online.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154837932925:android:1b8098cc1f310b42dc8a14",
+        "android_client_info": {
+          "package_name": "com.example.chat_c6_online"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154837932925-egcmu0i6ui7trn38m5as7ocgm6bd5bes.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYKRYGPJO6L6L1YXVL8_Px96S1B0kPy80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154837932925-egcmu0i6ui7trn38m5as7ocgm6bd5bes.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
