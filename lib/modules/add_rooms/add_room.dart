@@ -76,29 +76,26 @@ class _AddRoomState extends BaseState<AddRoom,AddRoomViewModel> implements AddRo
                 ),
                 Row(
                   children: [
-                    Expanded(
-                      child: DropdownButton<Category>(
-                        value: selectedCategory,
-
-                          items: categories.map((catId) =>
-                              DropdownMenuItem<Category>(
-                                  value: catId,
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  Image.asset(catId.image,height: 50,width: 60,),
-                                  SizedBox(width: 12,),
-                                  Text(catId.name),
-                                ],
-                              ))).toList(),
-                          onChanged: (category){
-                            if(category==null){
-                              return;
-                            }else{
-                              selectedCategory=category;
-                            }
-                          }),
-                    ),
+                    DropdownButton<Category>(
+                      value: selectedCategory,
+                        items: categories.map((catId) =>
+                            DropdownMenuItem<Category>(
+                                value: catId,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Image.asset(catId.image,height: 50,width: 60,),
+                                SizedBox(width: 12,),
+                                Text(catId.name),
+                              ],
+                            ))).toList(),
+                        onChanged: (category){
+                          if(category==null){
+                            return;
+                          }else{
+                            selectedCategory=category;
+                          }
+                        }),
                   ],
                 ),
                 TextFormField(
